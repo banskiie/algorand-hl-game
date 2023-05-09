@@ -62,8 +62,8 @@ function GameOverBox() {
           },
         }}
         onClick={() => {
-          AppGrp.playing();
-          location.reload();
+          // AppGrp.playing();
+          window.location.reload();
         }}
       >
         Play again
