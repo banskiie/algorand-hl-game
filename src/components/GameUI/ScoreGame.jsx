@@ -10,8 +10,6 @@ function ScoreGame(props) {
   const AppGrp = useContext(AppContext);
   const GameGrp = useContext(GameContext);
   const pera = useContext(PeraWalletContext);
-  const [clicked, setClicked] = useState(false);
-  // const [score, setScore] = useState(0);
 
   useEffect(() => {
     if (pera.localCount > 0) {
@@ -19,18 +17,13 @@ function ScoreGame(props) {
     } else if (pera.localCount === 0) {
       GameGrp.lost();
     }
-    return () => {
-      setClicked(false);
-    };
   }, [pera.localCount]);
 
   async function addScore() {
-    setClicked(true);
     pera.callCounterApplication("Add_Local");
   }
 
   async function gameOver() {
-    setClicked(true);
     pera.callCounterApplication("Reset_Local");
     if (pera.localCount === 0) {
       GameGrp.lost();
@@ -68,16 +61,14 @@ function ScoreGame(props) {
               marginY: 1.5,
               paddingY: 2,
               borderRadius: 4,
-              boxShadow:
-                GameGrp.revealValue
-                  ? 0
-                  : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+              boxShadow: GameGrp.revealValue
+                ? 0
+                : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
               border: "none",
               bgcolor: GameGrp.revealValue ? "green" : "#58ab53",
               color: "whitesmoke",
               pointerEvents: GameGrp.revealValue ? "none" : "auto",
-              cursor:
-                GameGrp.revealValue ? "not-allowed" : "pointer",
+              cursor: GameGrp.revealValue ? "not-allowed" : "pointer",
               transition: "ease-in-out 0.2s",
               ":hover": {
                 boxShadow: 0,
@@ -98,15 +89,13 @@ function ScoreGame(props) {
               marginY: 1.5,
               paddingY: 2,
               borderRadius: 4,
-              boxShadow:
-                GameGrp.revealValue
-                  ? 0
-                  : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+              boxShadow: GameGrp.revealValue
+                ? 0
+                : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
               border: "none",
               bgcolor: GameGrp.revealValue ? "red" : "#c65453",
               pointerEvents: GameGrp.revealValue ? "none" : "auto",
-              cursor:
-                GameGrp.revealValue ? "not-allowed" : "pointer",
+              cursor: GameGrp.revealValue ? "not-allowed" : "pointer",
               ":hover": {
                 boxShadow: 0,
                 bgcolor: "maroon",
