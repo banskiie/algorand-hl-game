@@ -69,15 +69,15 @@ function ScoreGame(props) {
               paddingY: 2,
               borderRadius: 4,
               boxShadow:
-                GameGrp.revealValue || clicked
+                GameGrp.revealValue
                   ? 0
                   : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
               border: "none",
-              bgcolor: GameGrp.revealValue || clicked ? "green" : "#58ab53",
+              bgcolor: GameGrp.revealValue ? "green" : "#58ab53",
               color: "whitesmoke",
-              pointerEvents: GameGrp.revealValue || clicked ? "none" : "auto",
+              pointerEvents: GameGrp.revealValue ? "none" : "auto",
               cursor:
-                GameGrp.revealValue || clicked ? "not-allowed" : "pointer",
+                GameGrp.revealValue ? "not-allowed" : "pointer",
               transition: "ease-in-out 0.2s",
               ":hover": {
                 boxShadow: 0,
@@ -99,14 +99,14 @@ function ScoreGame(props) {
               paddingY: 2,
               borderRadius: 4,
               boxShadow:
-                GameGrp.revealValue || clicked
+                GameGrp.revealValue
                   ? 0
                   : "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
               border: "none",
-              bgcolor: GameGrp.revealValue || clicked ? "red" : "#c65453",
-              pointerEvents: GameGrp.revealValue || clicked ? "none" : "auto",
+              bgcolor: GameGrp.revealValue ? "red" : "#c65453",
+              pointerEvents: GameGrp.revealValue ? "none" : "auto",
               cursor:
-                GameGrp.revealValue || clicked ? "not-allowed" : "pointer",
+                GameGrp.revealValue ? "not-allowed" : "pointer",
               ":hover": {
                 boxShadow: 0,
                 bgcolor: "maroon",
