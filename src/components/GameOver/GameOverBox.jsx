@@ -61,7 +61,10 @@ function GameOverBox() {
             color: "#252525",
           },
         }}
-        onClick={AppGrp.playing}
+        onClick={() => {
+          AppGrp.playing();
+          location.reload();
+        }}
       >
         Play again
       </Button>
