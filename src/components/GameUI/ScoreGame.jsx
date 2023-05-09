@@ -53,7 +53,7 @@ function ScoreGame(props) {
               userSelect: "none",
             }}
           >
-            Score: {!pera.localCount ? 0 : pera.localCount}
+            My Score: {!pera.localCount ? 0 : pera.localCount}
           </Typography>
           <Button
             endIcon={<ThumbUpOffAltIcon />}
