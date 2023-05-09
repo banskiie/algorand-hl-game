@@ -34,7 +34,7 @@ function GameOverBox() {
           fontWeight: 800,
         }}
       >
-        {AppGrp.finalScore}
+        {!AppGrp.finalScore ? 0 : AppGrp.finalScore}
       </Typography>
       <Typography variant="p" sx={{ fontWeight: 300 }}>
         {AppGrp.finalScore <= 2

@@ -32,7 +32,11 @@ function ScoreGame(props) {
   async function gameOver() {
     setClicked(true);
     pera.callCounterApplication("Reset_Local");
-    AppGrp.changeScore(pera.localCount);
+    if (pera.localCount === 0) {
+      GameGrp.lost();
+    } else {
+      AppGrp.changeScore(pera.localCount);
+    }
   }
 
   return (
