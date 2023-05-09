@@ -15,8 +15,6 @@ function ScoreGame(props) {
   useEffect(() => {
     if (pera.localCount > 0) {
       GameGrp.newValues();
-    } else if (pera.localCount === 0) {
-      GameGrp.lost();
     }
 
     return () => {
@@ -34,6 +32,7 @@ function ScoreGame(props) {
   function gameOver() {
     setClicked(true);
     pera.callCounterApplication("Reset_Local");
+    GameGrp.lost();
     // AppGrp.changeScore(pera.localCount);
   }
 
