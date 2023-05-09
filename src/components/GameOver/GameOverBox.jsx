@@ -34,7 +34,7 @@ function GameOverBox() {
           fontWeight: 800,
         }}
       >
-        {!pera.localCount ? 0 : pera.localCount}
+        {AppGrp.finalScore}
       </Typography>
       <Typography variant="p" sx={{ fontWeight: 300 }}>
         {AppGrp.finalScore <= 2

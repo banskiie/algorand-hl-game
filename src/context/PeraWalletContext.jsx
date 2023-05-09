@@ -3,7 +3,7 @@ import algosdk, { waitForConfirmation } from "algosdk";
 import { PeraWalletConnect } from "@perawallet/connect";
 
 const peraWallet = new PeraWalletConnect();
-const appIndex = 210614285;
+const appIndex = 210660872;
 const algod = new algosdk.Algodv2(
   "",
   "https://testnet-api.algonode.cloud",

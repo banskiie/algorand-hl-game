@@ -39,23 +39,19 @@ function Game() {
 
   const newValues = () => {
     setRevealValue((prevState) => !prevState);
+    setItem1(item2);
+    setItem2(gameData.items[Math.floor(Math.random() * dataLength)]);
+    setShow((prevState) => !prevState);
+    setRevealValue((prevState) => !prevState);
     setTimeout(() => {
-      setItem1(item2);
-      setItem2(gameData.items[Math.floor(Math.random() * dataLength)]);
       setShow((prevState) => !prevState);
-      setRevealValue((prevState) => !prevState);
-      setTimeout(() => {
-        setShow((prevState) => !prevState);
-      }, 300);
-    }, 2000);
+    }, 300);
   };
 
   const lost = () => {
     setRevealValue((prevState) => !prevState);
-    setTimeout(() => {
-      AppGrp.playing();
-      setRevealValue((prevState) => !prevState);
-    }, 2000);
+    AppGrp.playing();
+    setRevealValue((prevState) => !prevState);
   };
 
   const GameGrp = {

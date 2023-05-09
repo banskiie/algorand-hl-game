@@ -24,22 +24,15 @@ function ScoreGame(props) {
     };
   }, [pera.localCount]);
 
-  function addScore() {
+  async function addScore() {
     setClicked(true);
-    setTimeout(() => {
-      pera.callCounterApplication("Add_Local");
-      // setScore(pera.localCount);
-    }, 2000);
+    pera.callCounterApplication("Add_Local");
   }
 
-  function gameOver() {
+  async function gameOver() {
     setClicked(true);
     pera.callCounterApplication("Reset_Local");
     AppGrp.changeScore(pera.localCount);
-
-    // setTimeout(() => {
-    //   setScore(pera.localCount);
-    // }, 2000);
   }
 
   return (
