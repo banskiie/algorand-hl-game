@@ -11,12 +11,14 @@ function ScoreGame(props) {
   const GameGrp = useContext(GameContext);
   const pera = useContext(PeraWalletContext);
   const [clicked, setClicked] = useState(false);
+  // const [score, setScore] = useState(0);
 
   useEffect(() => {
     if (pera.localCount > 0) {
       GameGrp.newValues();
+    } else if (pera.localCount === 0) {
+      GameGrp.lost();
     }
-
     return () => {
       setClicked(false);
     };
@@ -26,14 +28,18 @@ function ScoreGame(props) {
     setClicked(true);
     setTimeout(() => {
       pera.callCounterApplication("Add_Local");
+      // setScore(pera.localCount);
     }, 2000);
   }
 
   function gameOver() {
     setClicked(true);
     pera.callCounterApplication("Reset_Local");
-    GameGrp.lost();
-    // AppGrp.changeScore(pera.localCount);
+    AppGrp.changeScore(pera.localCount);
+
+    // setTimeout(() => {
+    //   setScore(pera.localCount);
+    // }, 2000);
   }
 
   return (
@@ -52,7 +58,7 @@ function ScoreGame(props) {
               userSelect: "none",
             }}
           >
-            My Score: {!pera.localCount ? 0 : pera.localCount}
+            Score: {!pera.localCount ? 0 : pera.localCount}
           </Typography>
           <Button
             endIcon={<ThumbUpOffAltIcon />}
