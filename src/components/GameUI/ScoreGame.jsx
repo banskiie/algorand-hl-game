@@ -11,34 +11,30 @@ function ScoreGame(props) {
   const GameGrp = useContext(GameContext);
   const pera = useContext(PeraWalletContext);
   const [clicked, setClicked] = useState(false);
-  // const [score, setScore] = useState(0);
 
   useEffect(() => {
     if (pera.localCount > 0) {
-      setClicked(false);
       GameGrp.newValues();
     } else if (pera.localCount === 0) {
-      setClicked(false);
       GameGrp.lost();
     }
+
+    return () => {
+      setClicked(false);
+    };
   }, [pera.localCount]);
 
   function addScore() {
     setClicked(true);
     setTimeout(() => {
       pera.callCounterApplication("Add_Local");
-      // setScore(pera.localCount);
     }, 2000);
   }
 
   function gameOver() {
     setClicked(true);
     pera.callCounterApplication("Reset_Local");
-    AppGrp.changeScore(pera.localCount);
-
-    // setTimeout(() => {
-    //   setScore(pera.localCount);
-    // }, 2000);
+    // AppGrp.changeScore(pera.localCount);
   }
 
   return (
