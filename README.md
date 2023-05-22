@@ -35,6 +35,12 @@ The Instagram Followers Higher or Lower Game is built using the following techno
 - Smart Contracts: The game utilizes smart contracts to handle user interactions, random account selection, and validation.
 - Algorand Wallet Integration: Users can connect their Algorand wallets to the game to interact with the smart contracts and participate in the game.
 
+## Demo
+Here is the video demo of my dApp:
+(https://drive.google.com/file/d/1g7lopFXwAhMO1KVd_HBguQOch6b6A2as/view)
+
+Also here is the link of my dApp: (https://algorand-hl-game.vercel.app/)
+
 ## Disclaimer
 This dApp is built for informational and demonstration purposes only. The use of real Instagram accounts, follower numbers, or ALGO tokens in this game is simulated and does not involve actual financial transactions or interactions with the Instagram platform.
 
