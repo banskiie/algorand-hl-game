@@ -10,7 +10,7 @@ This dApp is a higher or lower game that allows users to guess whether the numbe
 4. Guess whether the number of followers of the first account is higher or lower than the second account.
 5. Submit your guess.
 6. Wait for the game result.
-7. If your guess is correct, you will receive a reward.
+7. If your guess is correct, you will receive a point to your score.
 
 ## Game Logic
 The game logic is implemented through smart contracts using PyTeal, the Algorand ecosystem's smart contract language. The smart contract ensures the fairness and transparency of the game by executing the following steps:
@@ -38,7 +38,8 @@ The Instagram Followers Higher or Lower Game is built using the following techno
 ## Demo
 Here is the video demo of my dApp:
 
-[![demo](/assets/demo.png 'wow')](https://youtu.be/ff2P4tAmQdc)
+[![demo](/assets/images/demo.png)]
+(https://youtu.be/ff2P4tAmQdc)
 
 
 ## Disclaimer
