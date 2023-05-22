@@ -38,7 +38,8 @@ The Instagram Followers Higher or Lower Game is built using the following techno
 ## Demo
 Here is the video demo of my dApp:
 
-[![demo](https://github.com/banskiie/algorand-hl-game/assets/111651884/a3299598-800e-45d1-9e4d-7cf1bc151544)](https://youtu.be/ff2P4tAmQdc)
+[![demo](https://github.com/banskiie/algorand-hl-game/assets/111651884/a3299598-800e-45d1-9e4d-7cf1bc151544)]
+[video](https://youtu.be/ff2P4tAmQdc)
 
 
 ## Disclaimer
