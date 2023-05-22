@@ -38,7 +38,7 @@ The Instagram Followers Higher or Lower Game is built using the following techno
 ## Demo
 Here is the video demo of my dApp:
 
-[![demo](/assets/demo.png 'wow')](https://youtu.be/ff2P4tAmQdc]
+[![demo](/assets/demo.png 'wow')](https://youtu.be/ff2P4tAmQdc)
 
 
 ## Disclaimer
