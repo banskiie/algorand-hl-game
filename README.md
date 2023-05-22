@@ -38,8 +38,7 @@ The Instagram Followers Higher or Lower Game is built using the following techno
 ## Demo
 Here is the video demo of my dApp:
 
-![demo](https://drive.google.com/file/d/1g7lopFXwAhMO1KVd_HBguQOch6b6A2as/view)
-(https://drive.google.com/file/d/1g7lopFXwAhMO1KVd_HBguQOch6b6A2as/view)
+[![demo](https://drive.google.com/file/d/1g7lopFXwAhMO1KVd_HBguQOch6b6A2as/view)](https://drive.google.com/file/d/1g7lopFXwAhMO1KVd_HBguQOch6b6A2as/view)
 
 ## Disclaimer
 This dApp is built for informational and demonstration purposes only. The use of real Instagram accounts, follower numbers, or ALGO tokens in this game is simulated and does not involve actual financial transactions or interactions with the Instagram platform.
